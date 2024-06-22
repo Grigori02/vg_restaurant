@@ -1,0 +1,17 @@
+.iframs {
+    width: 100%;
+    height: 40vh;
+}
+.continer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    background-color: rgb(4 39 38);
+}
+.item {
+    width: calc(70% / 3 );
+    height: 100%;
+    padding-top: 30px;
+    margin: auto;
+    color: white;
+}

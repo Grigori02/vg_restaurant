@@ -1,0 +1,8 @@
+.continer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(48 17 15);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
