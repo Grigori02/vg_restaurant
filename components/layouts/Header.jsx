@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from '../../styles/Header.module.css';
-const Header = () => {
+
+const Header = ({show = true}) => {
+
     return (
-        <div className={styles.header}>
+        <div className={`${styles.header}`} style={{top: show ? '0%' : '-20%'}}>
             <div className={styles.container}>
                 <div className={styles.menus}>
                     <ul>

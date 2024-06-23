@@ -1,32 +1,29 @@
 import React from 'react';
-import {Card} from "antd";
+import styles from '../../styles/Halls.module.css'
+import Item from "@/components/halls/item";
+import Slider from "react-slick";
 
-const Hall = (props) => {
+const Halls = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+    };
     return (
-        <div>
-            <Card
-                hoverable
-                style={{width: 500, height: 500}}
-
-                cover={<img
-                    alt="example"
-                    src={props?.item?.image}
-                    style={{width: 500, height: 400, objectFit: 'cover' }}
-                />}
-            >
-                <div style={{
-                    display: "flex",
-                    color: "gray",
-                    justifyContent: "space-around",
-                    borderTop: "1px solid gray ",
-                }}>
-
-                </div>
-                <div><h3>{props.item.titel}</h3></div>
-                <div><h5>{props.item.qanak}</h5></div>
-            </Card>
+        <div className={styles.container}>
+            <h1>Սրահներ</h1>
+                <Slider {...settings}>
+                    <Item/>
+                    <Item/>
+                    <Item/>
+                    <Item/>
+                </Slider>
         </div>
     );
 };
 
-export default Hall;
+export default Halls;

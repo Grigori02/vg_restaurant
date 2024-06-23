@@ -10,15 +10,18 @@ const Packages = () => {
         {name:"ՓԱԹԵԹ-3",value:"15000AMD"},
         {name:"ՓԱԹԵԹ-4",value:"18000AMD"},
         {name:"ՓԱԹԵԹ-5",value:"20000AMD"},
-        {name:"ՓԱԹԵԹ-6",value:"25000AMD"},
     ]
 
     return (
-        <div className={styles.cotaynerPackages}>
+        <div className={styles.container}>
+            <h1>Փաթեթներ</h1>
+            <p>Բոլոր փաթեթները հնարավորություն ունեն փոփոխման</p>
+            <div className={styles.row}>
+                {
+                    arr.map((item, index) => <Package key={index} item={item}/>)
+                }
 
-            {
-                arr.map((item, index) => <Package key={index} item={item}/>)
-            }
+            </div>
 
         </div>
 

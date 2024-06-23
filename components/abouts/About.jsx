@@ -7,8 +7,8 @@ const About = () => {
                 <img src="logo-main.png" alt=""/>
             </div>
             <div className={styles.biography}>
-                <h2>ՄԵՐ ՄԱՍԻՆ</h2>
-                <p>JIORWFMK ADI  AIIWERM J WEQ JQW0KDJ JV 339PQID QWQP2-C0 QW-QIOE KPOE OPI23-0O2 -0IO-1OQWE </p>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. !</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa impedit minus molestiae nam quae repellat ut! Consectetur eveniet incidunt non quam reiciendis vero voluptatibus. At mollitia optio quo?</p>
             </div>
         </div>
     );

@@ -5,6 +5,9 @@ const BackgroundVideo = () => {
     return (
         <div className={styles.imageContainer}>
             <img className={styles.body_image} src="https://wallpapers.com/images/featured/restaurant-background-2ez77umko2vj5w02.jpg" alt=""/>
+            <div className={styles.overline}>
+                <h1>Good times great testes</h1>
+            </div>
         </div>
     );
 };

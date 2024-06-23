@@ -1,18 +1,17 @@
-.continer {
-    width: 100%;
-    display: flex;
+.containerFood {
+    width: 90%;
+    margin: auto;
 
 }
-.continerFood h1 {
+
+.containerFood h1 {
     text-align: center;
-    background-color: rgb(48 17 15);
-    color: white;
     padding: 20px;
 }
 .item {
-    width: calc(100% / 4);
-    height: 400px;
-    background-color: #00d084;
+    width: 90%;
+    margin: auto;
+    height: 300px;
 }
 .item img {
     width: 100%;
