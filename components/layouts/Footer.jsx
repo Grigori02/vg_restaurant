@@ -4,8 +4,8 @@ import {FacebookFilled, InstagramFilled, LinkedinFilled} from "@ant-design/icons
 const Footer = () => {
     return (
         <div>
-            <div className={styles.footerContayner}>
-                <div className={styles.contayner}>
+            <div className={styles.footerContainer}>
+                <div className={styles.container}>
                     <div className={styles.item}>
                         <ul>
                             <li>locationn</li>

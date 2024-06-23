@@ -1,28 +1,39 @@
 import React from 'react';
-import {Card} from "antd";
+import styles from "../../styles/Packages.module.css"
 
 const Package = (props) => {
     return (
-        <div>
-            <Card title={props.item.name} bordered={true} style={{ width: 300 }}>
-                <p>Arax</p>
-                <p>jrexen</p>
-                <p>xorovac</p>
-                <p>salat</p>
-                <p>zakuski</p>
-                <p>ikra</p>
-
-                <div style={{
-                    display:"flex",
-                    color:"gray",
-                    justifyContent: "space-around",
-                    borderTop:  "1px solid gray ",
-                }}>
-
-                </div>
-                <div><h3>{props.item.value}</h3></div>
-            </Card>
-
+        <div className={styles.item}>
+            <div className={styles.header}>
+               <h3> Փաթեթ 1</h3>
+            </div>
+            <div className={styles.body}>
+                <ul>
+                    <li>
+                        <p>Grilled octopus</p>
+                        <p>Rocotta, Macota, Salama, salata</p>
+                    </li>
+                    <li>
+                        <p>Grilled octopus</p>
+                        <p>Rocotta, Macota, Salama, salata</p>
+                    </li>
+                    <li>
+                        <p>Grilled octopus</p>
+                        <p>Rocotta, Macota, Salama, salata</p>
+                    </li>
+                    <li>
+                        <p>Grilled octopus</p>
+                        <p>Rocotta, Macota, Salama, salata</p>
+                    </li>
+                    <li>
+                        <p>Grilled octopus</p>
+                        <p>Rocotta, Macota, Salama, salata</p>
+                    </li>
+                </ul>
+            </div>
+            <div className={styles.footer}>
+               <h3> 8500 դրամ</h3>
+            </div>
         </div>
     );
 };

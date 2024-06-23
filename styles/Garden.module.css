@@ -1,13 +1,35 @@
-.continer {
-    width: 100%;
+.container {
+    background: #0e0d09;
+    padding: 50px 0;
+}
+.items {
+    width: 70%;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
 .images {
-    width: calc(100% / 3);
-    height: 400px;
-    background-color: green;
+    width: calc(100% / 3 - 20px);
+    height: 300px;
     margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    border: 1.5px solid white;
+}
+.images img{
+    height: 100%!important;
+}
+.images>div{
+    height: 100%!important;
+}
+.images:nth-child(5){
+    border: 0;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
 }
 .images img {
     width: 100%;
